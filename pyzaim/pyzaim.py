@@ -396,7 +396,7 @@ class ZaimCrawler:
         self.driver.get("https://id.zaim.net/")
         time.sleep(1)
 
-        self.driver.find_element(value="email_or_id").send_keys(user_id)
+        self.driver.find_element(value="email").send_keys(user_id)
         self.driver.find_element(value="password").send_keys(password, Keys.ENTER)
         time.sleep(1)
         print("Login Success.")
